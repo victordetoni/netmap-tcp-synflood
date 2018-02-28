@@ -15,7 +15,7 @@ To compile:
 
 After compiled, just run: 
 
-	./pkt-gen -i eth2 -f tx -D <gateway_mac_address> -s <src_ip>:<src_port_range>-<dst_ip>:dst_port_range -d <target>:<target_port>
+	./pkt-gen -i eth2 -f tx -D <gateway_mac_address> -s <src_ip>:<src_port_range>-<dst_ip>:<dst_port_range> -d <target>:<target_port>
   
 Real example :-)
 
