@@ -18,5 +18,8 @@ After compiled, just run:
   
 Real example :-)
 
-	/examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1:1024-10.255.255.255:1124 -d 192.168.10.80:80
+	/examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1:1024-10.255.255.255:5000 -d 192.168.10.80:80
+	
+OR
 
+		/examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1-10.255.255.255 -d 192.168.10.80:80
