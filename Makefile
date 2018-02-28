@@ -23,13 +23,8 @@ LDFLAGS += -lrt	-lm # needed on linux, does not harm on BSD
 
 all: $(PROGS)
 
-kern_test: testmod/kern_test.c
-
 pkt-gen: pkt-gen.o
 	$(CC) $(CFLAGS) -o pkt-gen pkt-gen.o $(LDFLAGS)
 
 clean:
 	-@rm -rf $(CLEANFILES)
-
-testlock: testlock.c
-	$(CC) $(CFLAGS) -o testlock testlock.c -lpthread $(LDFLAGS)
