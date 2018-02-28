@@ -15,16 +15,16 @@ To compile:
 
 After compiled, just run: 
 
-	/examples/pkt-gen -i eth2 -f tx -D <gateway_mac_address> -s <src_ip>:<src_port_range>-<dst_ip>:dst_port_range -d <target>:<target_port>
+	./pkt-gen -i eth2 -f tx -D <gateway_mac_address> -s <src_ip>:<src_port_range>-<dst_ip>:dst_port_range -d <target>:<target_port>
   
 Real example :-)
 
-	/examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1:1024-10.255.255.255:5000 -d 192.168.10.80:80
+	./pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1:1024-10.255.255.255:5000 -d 192.168.10.80:80
 	
 OR
 
-		/examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1-10.255.255.255 -d 192.168.10.80:80
+		./examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1-10.255.255.255 -d 192.168.10.80:80
 
 OR
 
-		/examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1 -d 192.168.10.80:80
+		./examples/pkt-gen -i eth2 -f tx -D 00:1B:21:A7:9B:D8 -s 10.0.0.1 -d 192.168.10.80:80
